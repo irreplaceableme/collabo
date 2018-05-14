@@ -1,0 +1,11 @@
+<h1>실습 게시판</h1>
+
+<form action='/post/new' method='post'>
+    <input type='string' name='title'> <input type='string' name='content'> <input type='submit'>
+</form>
+    
+    <%@posts.each do |post|%>
+    -------------------------------------------<br>
+        제목 : <%=post.title%><br>
+        내용 : <%=post.content%><br>
+    <% end %>
